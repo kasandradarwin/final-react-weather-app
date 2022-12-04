@@ -45,7 +45,7 @@ if (weatherData.ready) {
         </div>
         </div>
         </form>
-        <h1 className="text-capitalize">{weatherData.city}}</h1>
+        <h1 className="text-capitalize">{weatherData.city}</h1>
         <ul> 
             <li className="text-capitalize">{weatherData.date}</li>
             <li className="text-capitalize">{weatherData.description}</li>
