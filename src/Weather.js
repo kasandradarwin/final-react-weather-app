@@ -17,7 +17,7 @@ export default function Weather(props){
             iconUrl: response.main.condition.icon_url,
             wind: response.main.wind, 
             city: response.main.city,
-            date: Wednesday, 07:00,
+            date: "Wednesday, 07:00",
             description: response.main.condition.description,
 
         });
