@@ -25,7 +25,7 @@ export default function Weather(props){
             
         });
         // console.log(data.time)
-        console.log("DATA:" , response.data.time)
+        // console.log("DATA:" , response.data.time)
     }
     
     function handleSubmit(event) {
