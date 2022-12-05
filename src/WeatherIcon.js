@@ -7,12 +7,10 @@ export default function WeatherIcon(props){
         "clear-sky-night" : "CLEAR_NIGHT",
         "few-clouds-day" : "PARTLY_CLOUDY_DAY",
         "few-clouds-night" : "PARTLY_CLOUDY_NIGHT",
-        "scattered-clouds-day" : "CLOUDY",
+        "scattered-clouds-day" : "CLOUDY" || "FOG",
         "shower-rain-day" : "RAIN",
-        "snow-day" : "SLEET",
-        "snow-day" : "SNOW",
+        "snow-day" : "SLEET" || "SNOW",
         "mist-day" : "WIND",
-        "scattered-clouds-day" : "FOG",
 
     }
 
