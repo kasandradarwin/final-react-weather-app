@@ -1,4 +1,4 @@
-Preview this app at: https://github.com/kasandradarwin/final-react-weather-app
+Preview this app at: https://incomparable-dieffenbachia-0816cd.netlify.app/
 
 # Getting Started with Create React App
 
