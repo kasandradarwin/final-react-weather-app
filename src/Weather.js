@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo"
-import WeatherIcon from "./WeatherIcon"
+// import WeatherIcon from "./WeatherIcon"
 
 export default function Weather(props){
     // const [ready, setReady] = useState(false);
@@ -20,12 +20,12 @@ export default function Weather(props){
             icon: response.data.condition.icon,
             wind: response.data.wind.speed, 
             city: response.data.city,
-            date: new Date(response.data.time) * 1000,
+            date: response.data.time,
             description: response.data.condition.description,
             
         });
-        console.log(response)
-        // console.log(response.data)
+        // console.log(data.time)
+        console.log("DATA:" , response.data.time)
     }
     
     function handleSubmit(event) {
