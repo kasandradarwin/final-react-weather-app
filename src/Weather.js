@@ -7,12 +7,12 @@ import WeatherInfo from "./WeatherInfo"
 export default function Weather(props){
     // const [ready, setReady] = useState(false);
     const [weatherData, setWeatherData] = useState({ready:false});
-    const [temperature, setTemperature] = useState(null);
+    // const [temperature, setTemperature] = useState(null);
     const [city, setCity] = useState(props.defaultCity)
     
     
     function handleResponse(response){
-        setTemperature(response.data.temperature.current);
+        // setTemperature(response.data.temperature.current);
         setWeatherData({
             ready: true,
             temperature: response.data.temperature.current,
