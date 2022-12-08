@@ -23,6 +23,7 @@ export default function Weather(props){
             city: response.data.city,
             date: response.data.time,
             description: response.data.condition.description,
+
             
         });
         // console.log(data.time)
@@ -70,7 +71,7 @@ export default function Weather(props){
         </div>
         </form>
         <WeatherInfo data={weatherData} />
-       <WeatherForecast />
+       <WeatherForecast weatherForecastInfo={weatherData} />
         </div>
 
     ) 

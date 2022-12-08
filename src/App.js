@@ -1,5 +1,5 @@
 import './App.css';
-import Weather from './Weather';
+import Weather from './components/weather/Weather';
 
 
 export default function App() {
