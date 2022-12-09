@@ -16,11 +16,11 @@ export default function WeatherForecastDay(props){
     return(  
 <>
     <div className="WeatherForecast-day"><strong>{day()}</strong></div>
-        <WeatherIcon code={props.data[0].condition.icon} size={36} />
-        <div className="weatherForecast-temperature-max"><small> {props.data[0].condition.description} </small></div>
+        <WeatherIcon code={props.data.condition.icon} size={36} />
+        <div className="weatherForecast-temperature-max"><small> {props.data.condition.description} </small></div>
         <div className="WeatherForecast-temperatures" >
-            <span className="weatherForecast-temperature-max"><small>{Math.round(props.data[0].temperature.maximum)}° <span className="divider">| </span>  </small></span>
-            <span className="weatherForecast-temperature-min"> <small>{Math.round(props.data[0].temperature.minimum)}°</small> </span>
+            <span className="weatherForecast-temperature-max"><small>{Math.round(props.data.temperature.maximum)}° <span className="divider">| </span>  </small></span>
+            <span className="weatherForecast-temperature-min"> <small>{Math.round(props.data.temperature.minimum)}°</small> </span>
     </div>
 </> 
 
