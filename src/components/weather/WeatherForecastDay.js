@@ -2,7 +2,6 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props){
-    console.log(props.data[0])
 
     function day() {
         let date = new Date(props.data.time)
@@ -10,9 +9,9 @@ export default function WeatherForecastDay(props){
 
         let days = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat",]
 
+        console.log(props)
         return days[day]
     }
-
     return(  
 <>
     <div className="WeatherForecast-day"><strong>{day()}</strong></div>
