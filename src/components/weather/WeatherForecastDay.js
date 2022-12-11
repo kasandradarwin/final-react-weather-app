@@ -9,10 +9,7 @@ export default function WeatherForecastDay(props){
         let day = date.getDay();
         
         let days = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat",]
-        console.log("DATE",date)
-        console.log("DAY",day)
-        console.log("+++++++++++",date)
-
+      
         // console.log(props)
         return days[day]
     }
@@ -23,7 +20,7 @@ export default function WeatherForecastDay(props){
     {/* { console.log("***************************",props.data.time) } */}
         <WeatherIcon code={props.data.condition.icon} size={100} />
         {/* {console.log()} */}
-        <div className="weatherForecast-temperature-max"><small> {props.data.condition.description} </small></div>
+        <div className="weatherForecast-temperature-max text-capitalize"><small> {props.data.condition.description} </small></div>
         <div className="WeatherForecast-temperatures" >
             <span className="weatherForecast-temperature-max"><small>{Math.round(props.data.temperature.maximum)}° <span className="divider">| </span>  </small></span>
             <span className="weatherForecast-temperature-min"> <small>{Math.round(props.data.temperature.minimum)}°</small> </span>
